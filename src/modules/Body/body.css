@@ -1,0 +1,8 @@
+.mainBodyWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10% 0;
+  @media (min-width: 768px) {
+    margin: 5% 0;
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "name",
+    "type": "text",
+    "labelText": "Name"
+  },
+  {
+    "id": "email",
+    "type": "email",
+    "labelText": "Email"
+  },
+  {
+    "id": "password",
+    "type": "password",
+    "labelText": "Password"
+  },
+  {
+    "id": "conditions",
+    "type": "checkbox",
+    "labelText": "Accept conditions"
+  },
+  {
+    "id": "submit",
+    "type": "submit"
+  }
+]

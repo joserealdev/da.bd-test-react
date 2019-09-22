@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
-// import { Route, Switch, withRouter, Redirect } from "react-router-dom"
+import {
+  Route,
+  Switch,
+  Redirect
+} from 'react-router-dom'
 import styles from './body.css'
 import Table from './Table'
+import Form from './Form'
 
 class Body extends Component {
   render() {
@@ -9,9 +14,18 @@ class Body extends Component {
 
     return (
       <div className={ styles.mainBodyWrapper }>
-        <Table
-          showFields={ fieldsToShow }
-        />
+        <Switch>
+          <Route
+            path="/form"
+            component={ Form }
+          />
+          <Route
+            exact={ true }
+            path="/"
+            render={ () => <Table showFields={ fieldsToShow } /> }
+          />
+          <Redirect to="/" />
+        </Switch>
       </div>
     )
   }

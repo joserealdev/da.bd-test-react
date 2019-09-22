@@ -1,3 +1,5 @@
 export default {
-  TITLE: 'Header'
+  TITLE: 'React/Redux application',
+  LINK1: 'Table',
+  LINK2: 'Form'
 }

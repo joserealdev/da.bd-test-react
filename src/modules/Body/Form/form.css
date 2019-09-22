@@ -1,0 +1,18 @@
+.container {
+  border: 1px solid #b5b5b5;
+  padding: 5%;
+  width: 90%;
+  border-radius: 5px;
+  @media (min-width: 768px) {
+    width: unset;
+    padding: 3%;
+  }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    input {
+      margin-left: 5px;
+    }
+  }
+}

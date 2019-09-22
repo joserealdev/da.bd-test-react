@@ -7,6 +7,7 @@ import {
   compose,
   combineReducers
 } from 'redux'
+import { BrowserRouter } from 'react-router-dom'
 import thunk from 'redux-thunk'
 import './index.css'
 import tableReducer from 'store/reducers/table.js'
@@ -26,7 +27,9 @@ const store = createStore(
 
 const app = (
   <Provider store={ store }>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>
 )
 

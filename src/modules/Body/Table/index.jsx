@@ -48,9 +48,8 @@ class Table extends Component {
     const errorText = error ? 'Error loading information' : null
 
     return (
-      <div className={ styles.mainTableWrapper }>
-        { errorText }
-        { tableTag }
+      <div className={ styles.container }>
+        { errorText || tableTag }
       </div>
     )
   }
